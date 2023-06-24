@@ -40,7 +40,7 @@ const NavOptions = () => {
             <Text
               style={[
                 tw`mt-2 text-lg font-semibold pl-3 `,
-                { color: "#003f5e" },
+                { color: "black" },
               ]}
             >
               {item.title}
@@ -49,7 +49,7 @@ const NavOptions = () => {
               name="arrowright"
               color="white"
               type="antdesign"
-              style={tw`p-2 bg-black ml-8 rounded-full w-10 mt-4`}
+              style={[tw`p-2 bg-black ml-8 rounded-full w-10 mt-4`,{backgroundColor: "#003f5e"}]}
             ></Icon>
           </View>
         </TouchableOpacity>
