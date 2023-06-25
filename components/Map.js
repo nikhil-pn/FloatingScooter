@@ -56,19 +56,19 @@ const Map = () => {
   const navigation = useNavigation();
   const dispatch = useDispatch();
 
-  useEffect(() => {
-    if (!origin || !destination) return;
-    mapRef.current.fitToSuppliedMarkers(["origin", "destination"], {
-      edgePadding: { top: 50, right: 50, bottom: 50, left: 50 },
-    });
-  }, [origin, destination]);
+  // useEffect(() => {
+  //   if (!origin || !destination) return;
+  //   mapRef.current.fitToSuppliedMarkers(["origin", "destination"], {
+  //     edgePadding: { top: 50, right: 50, bottom: 50, left: 50 },
+  //   });
+  // }, [origin, destination]);
 
-  useEffect(() => {
-    if (!origin || !destination) return;
-    getTravelTime();
-  }, [origin, destination, GOOGLE_MAPS_APIKEY]);
+  // useEffect(() => {
+  //   if (!origin || !destination) return;
+  //   getTravelTime();
+  // }, [origin, destination, GOOGLE_MAPS_APIKEY]);
 
-  console.log(origin?.location?.lat, "description: ");
+  // console.log(origin?.location?.lat, "description: ");
 
   return (
     <MapView
@@ -87,7 +87,7 @@ const Map = () => {
       //   longitudeDelta: 0.005,
       // }}
     >
-      {!!origin && !!destination && (
+      {/* {!!origin && !!destination && (
         <MapViewDirections
           origin={origin.description}
           destination={destination.description}
@@ -97,8 +97,8 @@ const Map = () => {
           strokeColor="black"
           onError={(error) => console.log("Directions error: ", error)}
         />
-      )}
-      {origin?.loaction && (
+      )} */}
+      {/* {origin?.loaction && (
         <Marker
           coordinate={{
             latitude: origin?.loaction.lat,
@@ -108,8 +108,8 @@ const Map = () => {
           description={origin.description}
           identifier="origin"
         ></Marker>
-      )}
-      {destination?.loaction && (
+      )} */}
+      {/* {destination?.loaction && (
         <Marker
           coordinate={{
             latitude: destination?.loaction.lat,
@@ -119,7 +119,7 @@ const Map = () => {
           description={destination.description}
           identifier="destination"
         ></Marker>
-      )}
+      )} */}
     </MapView>
   );
 };
