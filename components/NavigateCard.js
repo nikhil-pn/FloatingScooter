@@ -1,4 +1,4 @@
-import { View, Text } from "react-native";
+import { View, Text, TouchableOpacity } from "react-native";
 import React from "react";
 import { SafeAreaView } from "react-native";
 import tw from "tailwind-react-native-classnames";
@@ -9,6 +9,7 @@ import { useDispatch } from "react-redux";
 import { setDestination } from "../slices/navSlice";
 import { useNavigation } from "@react-navigation/native";
 import NavFavourites from "./NavFavourites";
+import { Icon } from "react-native-elements";
 
 const NavigateCard = () => {
   const dispatch = useDispatch();
@@ -68,6 +69,30 @@ const NavigateCard = () => {
         </View>
         <View style={tw`p-4 pl-4`}>
           <NavFavourites></NavFavourites>
+        </View>
+        <View>
+          <View
+            style={tw`mt-auto flex-row justify-evenly py-2 border-t border-gray-100`}
+          >
+            <TouchableOpacity
+              style={tw`flex-row bg-black w-24 px-4 py-3 rounded-full border border-black`}
+              onPress={() => navigation.push("RideOptionsCard")}
+            >
+              <Icon name="car" type="font-awesome" color="white" size={16} />
+              <Text style={tw`text-white text-center pl-3`}>Ride</Text>
+            </TouchableOpacity>
+            <TouchableOpacity
+              style={tw`flex-row bg-white w-24 px-4 py-3 rounded-full border border-black`}
+            >
+              <Icon
+                name="fast-food-outline"
+                type="ionicon"
+                color="black"
+                size={16}
+              />
+              <Text style={tw`text-black text-center pl-3`}>Food</Text>
+            </TouchableOpacity>
+          </View>
         </View>
       </View>
     </SafeAreaView>
