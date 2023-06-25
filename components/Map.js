@@ -87,39 +87,26 @@ const Map = () => {
       //   longitudeDelta: 0.005,
       // }}
     >
-      {/* {!!origin && !!destination && (
+      {origin && destination && (
         <MapViewDirections
           origin={origin.description}
           destination={destination.description}
-          lineDashPattern={[0]}
           apikey={GOOGLE_MAPS_APIKEY}
-          strokeWidth={3}
           strokeColor="black"
-          onError={(error) => console.log("Directions error: ", error)}
-        />
-      )} */}
-      {/* {origin?.loaction && (
+          strokeWidth={3}
+        ></MapViewDirections>
+      )}
+      {origin?.location && (
         <Marker
           coordinate={{
-            latitude: origin?.loaction.lat,
-            longitude: origin?.loaction.lng,
+            latitude: origin.location.lat,
+            longitude: origin.location.lng,
           }}
           title="Origin"
           description={origin.description}
           identifier="origin"
         ></Marker>
-      )} */}
-      {/* {destination?.loaction && (
-        <Marker
-          coordinate={{
-            latitude: destination?.loaction.lat,
-            longitude: destination?.loaction.lng,
-          }}
-          title="Destination"
-          description={destination.description}
-          identifier="destination"
-        ></Marker>
-      )} */}
+      )}
     </MapView>
   );
 };
