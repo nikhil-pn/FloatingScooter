@@ -43,7 +43,7 @@ import MapView, { Marker } from "react-native-maps";
 import tw from "tailwind-react-native-classnames";
 import { useNavigation } from "@react-navigation/native";
 import { useDispatch, useSelector } from "react-redux";
-import { selectDestination, selectOrigin } from "../slices/navSlice";
+import { selectDestination, selectOrigin,setTravelTimeInformation  } from "../slices/navSlice";
 import MapViewDirections from "react-native-maps-directions";
 import { GooglePlacesAutocomplete } from "react-native-google-places-autocomplete";
 import { GOOGLE_MAPS_APIKEY } from "@env";
@@ -64,13 +64,6 @@ const Map = () => {
   //   });
   // }, [origin, destination]);
 
-  // useEffect(() => {
-  //   if (!origin || !destination) return;
-  //   getTravelTime();
-  // }, [origin, destination, GOOGLE_MAPS_APIKEY]);
-
-  // console.log(origin?.location?.lat, "description: ");
-
   useEffect(() => {
     if (!origin || !destination) return;
     //Zoom & fit to markers
@@ -78,6 +71,20 @@ const Map = () => {
       edgePadding: { top: 50, right: 50, bottom: 50, left: 50 },
     });
   }, [origin, destination]);
+
+  useEffect(() => {
+    if (!origin || !destination) return;
+
+    const getTravelTime = async () => {
+      fetch(
+        `https://maps.googleapis.com/maps/api/distancematrix/json?units=imperial&origins=${origin.description}&destinations=${destination.description}&key=${GOOGLE_MAPS_APIKEY}`
+      ).then((res) => res.json()).then((data) => {
+          console.log(data);
+          dispatch(setTravelTimeInformation(data.rows[0].elements[0]));
+        });
+    };
+    getTravelTime();
+  }, [origin, destination, GOOGLE_MAPS_APIKEY]);
 
   return (
     <MapView
@@ -90,7 +97,6 @@ const Map = () => {
         latitudeDelta: 0.005,
         longitudeDelta: 0.005,
       }}
-  
     >
       {origin && destination && (
         <MapViewDirections
