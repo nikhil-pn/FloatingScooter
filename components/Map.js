@@ -90,12 +90,7 @@ const Map = () => {
         latitudeDelta: 0.005,
         longitudeDelta: 0.005,
       }}
-      // initialRegion={{
-      //   latitude: origin?.loaction.lat,
-      //   longitude: origin?.loaction.lng,
-      //   latitudeDelta: 0.005,
-      //   longitudeDelta: 0.005,
-      // }}
+  
     >
       {origin && destination && (
         <MapViewDirections
