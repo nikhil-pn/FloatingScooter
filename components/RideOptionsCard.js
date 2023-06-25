@@ -22,7 +22,7 @@ import {
 const data = [
   {
     id: "Uber-Auto",
-    title: "Uber Auto",
+    title: "Auto",
     multiplier: 0.75,
     image:
       "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_637/v1648432113/assets/6e/86fff4-a82a-49b9-8b0b-54b341ea0790/original/Uber_Auto_312x208_pixels_Mobile.png",
@@ -73,23 +73,20 @@ const RideOptionsCard = () => {
   }, [origin, destination]);
 
   const travelConst = (item) => {
-    return (
-      (travelTimeInformation?.duration?.value *
-        SURGE_CHARGE_RATE *
-        item?.multiplier) /
-      100
-    ).toFixed(2);
+    const result = kilometerMile();
+    const price = result * 15;
+    return price;
   };
 
   console.log(travelTimeInformation.distance, "dis");
-  
+
   //Kilimetro distance function
   const kilometerMile = () => {
     const result = travelTimeInformation?.distance?.text;
     let str = result;
     let number = parseFloat(str.match(/\d+(\.\d+)?/)[0]);
     console.log(number); // 11.6
-    return number *1.6;
+    return number * 1.6;
   };
 
   const onChoose = () => {
