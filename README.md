@@ -31,7 +31,7 @@
 
 ## :handshake: Visit My Website
 
-Visit my Website to know more <a href='https://nikhilpn.com'>www.nikhilpn.com</a>
+Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www.nikhilpn.com</a>
 
 <!-- Table of Contents -->
 
@@ -51,6 +51,8 @@ Visit my Website to know more <a href='https://nikhilpn.com'>www.nikhilpn.com</a
 
 ## :star2: About the Project
 
+<a href="flow.html">Flow</a>
+
 <!-- Screenshots -->
 
 ### :camera: Screenshots
@@ -59,13 +61,13 @@ Visit my Website to know more <a href='https://nikhilpn.com'>www.nikhilpn.com</a
 <img width='400rem'  src='https://user-images.githubusercontent.com/87669361/215503229-ab694dc9-6a30-4db4-9461-a205a8f45821.png' alt='image'/>
 </div>
 
+
+
+
 <br />
 
-## <a> 💥</a>
+## <a> 🚀</a>
 
-![forthebadge](https://forthebadge.com/images/badges/built-with-love.svg)
-![forthebadge](https://forthebadge.com/images/badges/for-you.svg)
-![forthebadge](https://forthebadge.com/images/badges/powered-by-coffee.svg)
 
 ### :space_invader: Tech Stack
 
@@ -112,10 +114,10 @@ Visit my Website to know more <a href='https://nikhilpn.com'>www.nikhilpn.com</a
     </tr>
 </table>
 
-![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
+<!-- ![](https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)
 ![](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
 ![](https://img.shields.io/badge/next.js-20232A?style=for-the-badge&logo=next.js&logoColor=61DAFB)
-![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white)
+![](https://img.shields.io/badge/GIT-E44C30?style=for-the-badge&logo=git&logoColor=white) -->
 
 ## :toolbox: Getting Started
 
@@ -180,4 +182,4 @@ To learn more about React native and redux, take a look at the following resourc
 
 ## :handshake: Contact
 
-Nikhil PN - [@twitter pluto0p](https://twitter.com/nikhilETH) - nikhilpn725@gmail.com
+Nikhil PN - [@twitter NikhilETH](https://twitter.com/nikhilETH) - nikhilpn725@gmail.com
