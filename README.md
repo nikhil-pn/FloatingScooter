@@ -60,12 +60,12 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 </div>
 
 <div align="center" display="flex">
-<a href="https://screenshotflow.com/?open=1yK7QvQPO7APloNP9WdxIfEXfr9g-KjGU">View the FlowChart for the APP here</a>
+<a _target="blank" href="https://screenshotflow.com/?open=1yK7QvQPO7APloNP9WdxIfEXfr9g-KjGU">View the FlowChart for the APP here</a>
 </div>
 
 <div align="center" display='flex'>
 
-<img width='600rem'  src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/flowchart.png' alt='image'/>
+<img width='600rem'   src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/flowchart.png' alt='image'/>
 </div>
 
 <br />
