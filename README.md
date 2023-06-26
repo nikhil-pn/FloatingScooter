@@ -51,7 +51,7 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 
 ## :star2: About the Project
 
-<a href="flow.html">Flow</a>
+
 
 <!-- Screenshots -->
 
@@ -61,7 +61,7 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 <img width='400rem'  src='https://user-images.githubusercontent.com/87669361/215503229-ab694dc9-6a30-4db4-9461-a205a8f45821.png' alt='image'/>
 </div>
 
-
+<a href="demo/flow.html">View the FlowChart for the APP</a>
 
 
 <br />
