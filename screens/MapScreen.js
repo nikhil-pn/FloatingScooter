@@ -12,6 +12,7 @@ import { useNavigation } from "@react-navigation/native";
 
 
 const MapScreen = () => {
+  //stach & navigation created
   const Stack = createStackNavigator();
   const navigation = useNavigation()
   return (
@@ -22,10 +23,12 @@ const MapScreen = () => {
       >
         <Icon name="menu" />
       </TouchableOpacity>
+      {/* definiing map component first half screen for maps and rest for navigate card screen */}
       <View style={tw`h-1/2`}>
         <Map></Map>
       </View>
       <View style={tw`h-1/2`}>
+        {/* navigate screen again split into 2 */}
         <Stack.Navigator>
           <Stack.Screen
             name="NavigateCard"

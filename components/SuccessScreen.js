@@ -8,8 +8,10 @@ import { Image } from "react-native";
 
 const SuccessScreen = ({ route }) => {
   const navigation = useNavigation();
+  //geting data from args from the navigation.nativagte method by route.params
   const { data } = route.params;
   return (
+    //styling the sucess screen
     <SafeAreaView style={tw``}>
       <View style={tw`h-full justify-center`}>
         <View style={tw`p-5 text-center flex  justify-center items-center `}>
@@ -21,7 +23,7 @@ const SuccessScreen = ({ route }) => {
             Your {data?.title} is on the way
           </Text>
           <View style={tw`items-center `}>
-            <Text>Please the Amount of : ${data?.price}</Text>
+            <Text>Please the Amount of : {data?.price} Rupees</Text>
            
           </View>
         </View>

@@ -1,4 +1,4 @@
-import tw from "tailwind-react-native-classnames"
+import tw from "tailwind-react-native-classnames";
 import React from "react";
 import {
   FlatList,
@@ -10,7 +10,7 @@ import {
 import { Icon } from "react-native-elements";
 import { useDispatch } from "react-redux";
 
-
+// data for the navfav component
 const data = [
   {
     id: "1",
@@ -28,9 +28,9 @@ const data = [
 
 const NavFavourites = () => {
   const dispatch = useDispatch();
-
   const handlePress = () => {};
-
+  
+  // using a FlatList to loop through the data and ,the ui styled accordingly
   return (
     <FlatList
       data={data}
@@ -40,7 +40,7 @@ const NavFavourites = () => {
           onPress={handlePress}
         >
           <Icon
-            style={[tw`mr-4 rounded-full  p-3`, {backgroundColor: "#556c89"}]}
+            style={[tw`mr-4 rounded-full  p-3`, { backgroundColor: "#556c89" }]}
             name={item.icon}
             type="feather"
             color="white"

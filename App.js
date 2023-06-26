@@ -1,3 +1,4 @@
+//App.js -Root of the application
 import { StatusBar } from "expo-status-bar";
 import {
   StyleSheet,
@@ -19,6 +20,7 @@ import SuccessScreen from "./components/SuccessScreen";
 import WaterScreen from "./screens/WaterScreen";
 
 export default function App() {
+  //initializing the stack navigation
   const Stack = createStackNavigator();
 
   return (
@@ -30,6 +32,7 @@ export default function App() {
             behavior={Platform.OS === "ios" ? "padding" : "height"}
             keyboardVerticalOffset={Platform.OS === "ios" ? -64 : 0}
           >
+            {/* defining stack navigation for each screens  */}
             <Stack.Navigator>
               <Stack.Screen
                 name="HomeScreen"
@@ -60,6 +63,7 @@ export default function App() {
   );
 }
 
+//styles container
 const styles = StyleSheet.create({
   container: {
     flex: 1,

@@ -4,6 +4,7 @@ import { SafeAreaView } from "react-native";
 import tw from "tailwind-react-native-classnames";
 import { Image } from "react-native";
 
+//styling the water metro comming soon screen 
 const WaterScreen = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full flex justify-center items-center`}>

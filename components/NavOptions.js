@@ -7,6 +7,7 @@ import { useNavigation } from "@react-navigation/native";
 import { useSelector } from "react-redux";
 import { selectOrigin } from "../slices/navSlice";
 
+// data for navOpitons
 const data = [
   {
     id: "12345",
@@ -27,6 +28,7 @@ const NavOptions = () => {
   const origin = useSelector(selectOrigin);
 
   return (
+    // looping through the data in flatlist and styling them according both bike and boad button created in touchableOpacity
     <FlatList
       data={data}
       keyExtractor={(item) => item.id}
@@ -34,6 +36,7 @@ const NavOptions = () => {
       renderItem={({ item }) => (
         <TouchableOpacity
           disabled={!origin}
+          //using navigation to navigate to the appropriate screen
           onPress={() => navigation.navigate(item.screen)}
           style={[
             tw`p-2 pl-6 pb-8 pt-4 bg-gray-100 m-2 w-40 rounded`,

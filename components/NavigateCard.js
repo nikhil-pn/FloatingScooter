@@ -20,6 +20,7 @@ const NavigateCard = () => {
       <Text style={tw`text-center py-5 text-xl`}>Good Morning, Nikhil</Text>
       <View style={tw`border-t border-gray-200 flex-shrink`}>
         <View>
+          {/* fetching where to data from googleplaceautocomplet comp */}
           <GooglePlacesAutocomplete
             placeholder="Where To?"
             styles={toInputBoxStyles}
@@ -44,9 +45,11 @@ const NavigateCard = () => {
             debounce={400}
           />
         </View>
+        {/* defining navfavouriteis screen */}
         <View style={tw`p-4 pl-4`}>
           <NavFavourites></NavFavourites>
         </View>
+        {/* the ride button click push to RideOptionsCard comp screen added */}
         <View>
           <View
             style={tw`mt-auto flex-row justify-evenly py-2 border-t border-gray-100`}
@@ -75,6 +78,7 @@ const NavigateCard = () => {
 
 export default NavigateCard;
 
+// navgateCard input box styles styleSheets
 const toInputBoxStyles = StyleSheet.create({
   container: {
     backgroundColor: "white",

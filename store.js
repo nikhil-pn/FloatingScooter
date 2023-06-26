@@ -1,13 +1,4 @@
-// import { configureStore } from '@reduxjs/toolkit';
-// // import dataReducer from './slices/dataSlice'
-// import navReducer from './slices/navSlice'
-
-// export const store = configureStore({
-//     reducer: {
-//         nav: navReducer
-//     }
-// });
-
+//redux store 
 import { configureStore } from "@reduxjs/toolkit";
 import navReducer from "./slices/navSlice";
 

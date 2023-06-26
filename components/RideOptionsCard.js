@@ -19,6 +19,7 @@ import {
   selectTravelTimeInformation,
 } from "../slices/navSlice";
 
+// data for the bike and images etc
 const data = [
   {
     id: "Bike",
@@ -26,57 +27,31 @@ const data = [
     multiplier: 0.75,
     image: require("../assets/sc.png"),
   },
-  // {
-  //   id: "Boat",
-  //   title: "Boat",
-  //   multiplier: 0.5,
-  //   image: require("../assets/boat.png"),
-  // },
-
-  // {
-  //   id: "Uber-X",
-  //   title: "Uber X",
-  //   multiplier: 1,
-  //   image:
-  //     "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png",
-  // },
-  // {
-  //   id: "Uber-XL",
-  //   title: "Uber XL",
-  //   multiplier: 1.25,
-  //   image:
-  //     "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568134115/assets/6d/354919-18b0-45d0-a151-501ab4c4b114/original/XL.png",
-  // },
-  // {
-  //   id: "Uber-LUX",
-  //   title: "Uber LUX",
-  //   multiplier: 1.5,
-  //   image:
-  //     "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1569012915/assets/4f/599c47-7f5c-4544-a5d2-926babc8e113/original/Lux.png",
-  // },
+ 
 ];
 
 // if we have Surge pricing , this goes up
 const SURGE_CHARGE_RATE = 1.75;
 
 const RideOptionsCard = () => {
+  // states and selectors defining 
   const navigation = useNavigation();
   const [selected, setSelected] = useState(null);
   const travelTimeInformation = useSelector(selectTravelTimeInformation);
   const origin = useSelector(selectOrigin);
   const destination = useSelector(selectDestination);
-
+  
+  // if origin an destination null return to navigate card func created
   useEffect(() => {
     if (!origin || !destination) navigation.navigate("NavigateCard");
   }, [origin, destination]);
-
+  
+  // for demo purposes simple travel cost func 
   const travelConst = (item) => {
     const result = kilometerMile();
     const price = result * 15;
     return price;
   };
-
-  console.log(travelTimeInformation.distance, "dis");
 
   //Kilimetro distance function
   const kilometerMile = () => {
@@ -86,7 +61,7 @@ const RideOptionsCard = () => {
     console.log(number); // 11.6
     return number * 1.6;
   };
-
+  // onChoose func
   const onChoose = () => {
     if (!selected) return Alert.alert("Please select a ride option");
     navigation.navigate("SuccessScreen", {
@@ -100,6 +75,7 @@ const RideOptionsCard = () => {
   };
 
   return (
+    //Ride option card screen styled according to need
     <Screen style={tw`bg-white h-full`}>
       <View style={tw`items-center flex-row justify-center mb-3`}>
         <TouchableOpacity
