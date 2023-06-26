@@ -65,7 +65,7 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 
 <div align="center" display='flex'>
 
-<img width='400rem'  src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/flowchart.png' alt='image'/>
+<img width='600rem'  src='https://github.com/nikhil-pn/FloatingScooter/blob/main/demo/flowchart.png' alt='image'/>
 </div>
 
 <br />
