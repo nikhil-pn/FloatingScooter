@@ -1,41 +1,4 @@
-// import { View, Text } from "react-native";
-// import React, { useState } from "react";
-// import MapView, { Marker } from "react-native-maps";
-// import tw from "tailwind-react-native-classnames";
-// import { useSelector } from "react-redux";
-// import { selectOrigin } from "../slices/navSlice";
 
-// const Map = () => {
-//   const [data, setdata] = useState(null);
-//   const origin = useSelector(selectOrigin);
-//   console.log(origin, "origin map ");
-
-//   if (origin) {
-//     if (origin.description === data) {
-//       return;
-//     } else {
-//       setdata(origin.description);
-//     }
-//   }
-
-//   return (
-//     // <MapView
-//     //   style={tw`flex-1`}
-//     //   mapType="mutedStandard"
-//     //   initialRegion={{
-//     //     latitude: origin?.loaction.lat,
-//     //     longitude: origin?.loaction.lng,
-//     //     latitudeDelta: 0.005,
-//     //     longitudeDelta: 0.005,
-//     //   }}
-//     // ></MapView>
-//     <View>
-//       <Text style={{color: "black", fontSize: 50, flex: 1}}>{data}</Text>
-//     </View>
-//   );
-// };
-
-// export default Map;
 
 import { StyleSheet, Text, View } from "react-native";
 import React, { useEffect } from "react";
@@ -56,13 +19,6 @@ const Map = () => {
 
   const navigation = useNavigation();
   const dispatch = useDispatch();
-
-  // useEffect(() => {
-  //   if (!origin || !destination) return;
-  //   mapRef.current.fitToSuppliedMarkers(["origin", "destination"], {
-  //     edgePadding: { top: 50, right: 50, bottom: 50, left: 50 },
-  //   });
-  // }, [origin, destination]);
 
   useEffect(() => {
     if (!origin || !destination) return;

@@ -16,13 +16,13 @@ const data = [
     id: "1",
     icon: "home",
     location: "Home",
-    destination: "Hyderabad, Telangana, India",
+    destination: "Kochi, Kerala, India",
   },
   {
     id: "2",
     icon: "briefcase",
-    location: "Work",
-    destination: "CBIT, Gandipet, Telangana, India",
+    location: "Metro Station",
+    destination: "MG Road, Kerala, India",
   },
 ];
 
@@ -40,7 +40,7 @@ const NavFavourites = () => {
           onPress={handlePress}
         >
           <Icon
-            style={tw`mr-4 rounded-full bg-gray-300 p-3`}
+            style={[tw`mr-4 rounded-full  p-3`, {backgroundColor: "#556c89"}]}
             name={item.icon}
             type="feather"
             color="white"

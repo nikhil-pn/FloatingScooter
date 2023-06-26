@@ -21,41 +21,39 @@ import {
 
 const data = [
   {
-    id: "Uber-Auto",
-    title: "Auto",
+    id: "Bike",
+    title: "Bike",
     multiplier: 0.75,
-    image:
-      "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_637/v1648432113/assets/6e/86fff4-a82a-49b9-8b0b-54b341ea0790/original/Uber_Auto_312x208_pixels_Mobile.png",
+    image: require("../assets/sc.png"),
   },
-  {
-    id: "Uber-Bike",
-    title: "Uber Bike",
-    multiplier: 0.5,
-    image:
-      "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_637/v1649231091/assets/2c/7fa194-c954-49b2-9c6d-a3b8601370f5/original/Uber_Moto_Orange_312x208_pixels_Mobile.png",
-  },
+  // {
+  //   id: "Boat",
+  //   title: "Boat",
+  //   multiplier: 0.5,
+  //   image: require("../assets/boat.png"),
+  // },
 
-  {
-    id: "Uber-X",
-    title: "Uber X",
-    multiplier: 1,
-    image:
-      "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png",
-  },
-  {
-    id: "Uber-XL",
-    title: "Uber XL",
-    multiplier: 1.25,
-    image:
-      "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568134115/assets/6d/354919-18b0-45d0-a151-501ab4c4b114/original/XL.png",
-  },
-  {
-    id: "Uber-LUX",
-    title: "Uber LUX",
-    multiplier: 1.5,
-    image:
-      "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1569012915/assets/4f/599c47-7f5c-4544-a5d2-926babc8e113/original/Lux.png",
-  },
+  // {
+  //   id: "Uber-X",
+  //   title: "Uber X",
+  //   multiplier: 1,
+  //   image:
+  //     "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568070387/assets/b5/0a5191-836e-42bf-ad5d-6cb3100ec425/original/UberX.png",
+  // },
+  // {
+  //   id: "Uber-XL",
+  //   title: "Uber XL",
+  //   multiplier: 1.25,
+  //   image:
+  //     "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1568134115/assets/6d/354919-18b0-45d0-a151-501ab4c4b114/original/XL.png",
+  // },
+  // {
+  //   id: "Uber-LUX",
+  //   title: "Uber LUX",
+  //   multiplier: 1.5,
+  //   image:
+  //     "https://www.uber-assets.com/image/upload/f_auto,q_auto:eco,c_fill,w_956,h_537/v1569012915/assets/4f/599c47-7f5c-4544-a5d2-926babc8e113/original/Lux.png",
+  // },
 ];
 
 // if we have Surge pricing , this goes up
@@ -131,7 +129,7 @@ const RideOptionsCard = () => {
               }`}
               onPress={() => setSelected(item)}
             >
-              <Image source={{ uri: item.image }} style={styles.image} />
+              <Image source={item.image} style={styles.image} />
               <View style={tw`flex-row items-center justify-between flex-1`}>
                 <View>
                   <Text style={tw`text-xl font-bold text-black`}>
@@ -168,8 +166,9 @@ export default RideOptionsCard;
 
 const styles = StyleSheet.create({
   image: {
-    width: 100,
-    height: 100,
+    width: 90,
+    height: 90,
     resizeMode: "contain",
+    marginRight: 10 
   },
 });

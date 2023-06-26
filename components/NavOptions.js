@@ -10,15 +10,15 @@ import { selectOrigin } from "../slices/navSlice";
 const data = [
   {
     id: "12345",
-    title: "Bike Taxi",
-    image: "https://links.papareact.com/3pn",
+    title: "   Scooty",
+    image: require("../assets/sc.png"),
     screen: "MapScreen",
   },
   {
     id: "56789",
     title: "Water Metro",
-    image: "https://links.papareact.com/28w",
-    screen: "EatsScreen", // CHANGES IN FUTURE ...
+    image: require("../assets/boat.png"),
+    screen: "WaterScreen", // CHANGES IN FUTURE ...
   },
 ];
 
@@ -35,12 +35,15 @@ const NavOptions = () => {
         <TouchableOpacity
           disabled={!origin}
           onPress={() => navigation.navigate(item.screen)}
-          style={tw`p-2 pl-6 pb-8 pt-4 bg-gray-100 m-2 w-40 rounded`}
+          style={[
+            tw`p-2 pl-6 pb-8 pt-4 bg-gray-100 m-2 w-40 rounded`,
+            { backgroundColor: "#f6f6f6" },
+          ]}
         >
-          <View style={tw`${!origin && 'opacity-20'}`}>
+          <View style={tw`${!origin && "opacity-20"}`}>
             <Image
               style={{ width: 120, height: 120, resizeMode: "contain" }}
-              source={{ uri: item.image }}
+              source={item.image}
             ></Image>
             <Text
               style={[tw`mt-2 text-lg font-semibold pl-3 `, { color: "black" }]}

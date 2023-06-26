@@ -21,10 +21,18 @@ const HomeScreen = () => {
   return (
     <SafeAreaView style={tw`bg-white h-full `}>
       <View style={tw`p-5`}>
-        <Image
-          style={{ width: 100, height: 100, resizeMode: "contain" }}
-          source={require("../assets/metro-logo.png")}
-        ></Image>
+        <View style={tw`flex justify-center items-center -mb-4 pl-4 `}>
+          <Image
+            style={{
+              width: 140,
+              height: 140,
+              resizeMode: "contain",
+              alignContent: "center",
+              display: "flex",
+            }}
+            source={require("../assets/floating.png")}
+          ></Image>
+        </View>
 
         <GooglePlacesAutocomplete
           placeholder="Where From?"
@@ -57,8 +65,13 @@ const HomeScreen = () => {
           debounce={400}
         />
         <NavOptions></NavOptions>
-        <NavFavourites></NavFavourites>
-       
+        <View style={tw`pt-6`}>
+          <NavFavourites></NavFavourites>
+        </View>
+        <View style={tw`justify-center items-center pt-10`}>
+          <Text style={tw`text-xs`}>www.nikhilpn.com</Text>
+          <Text style={tw`text-sm`}>©2023 all right reservered</Text>
+        </View>
       </View>
     </SafeAreaView>
   );

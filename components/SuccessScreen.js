@@ -4,38 +4,26 @@ import { SafeAreaView } from "react-native";
 import tw from "tailwind-react-native-classnames";
 import { Icon } from "react-native-elements";
 import { useNavigation } from "@react-navigation/native";
+import { Image } from "react-native";
 
 const SuccessScreen = ({ route }) => {
   const navigation = useNavigation();
   const { data } = route.params;
   return (
-    <SafeAreaView style={tw`flex`}>
-      {/* <TouchableOpacity
-        style={[tw`bg-white p-3 rounded-full shadow-lg`]}
-        onPress={() => navigation.navigate("HomeScreen")}
-      >
-        <Icon type="antdesign" name="home" color="black" size={16} />
-      </TouchableOpacity> */}
-      <View style={tw`self-center`}>
-        <View style={tw`p-5 w-full `}>
-          {/* <Image
-            source={require("../assets/car_animation.gif")}
-            style={tw`w-60 h-40`}
-          /> */}
-        </View>
-        <View style={tw`p-5 text-center self-center`}>
-          <Text style={tw`font-bold text-lg mb-3 text-center`}>
+    <SafeAreaView style={tw``}>
+      <View style={tw`h-full justify-center`}>
+        <View style={tw`p-5 text-center flex  justify-center items-center `}>
+          <Image
+            source={require("../assets/sc.png")}
+            style={{ width: 150, height: 150, resizeMode: "contain" }}
+          ></Image>
+          <Text style={tw`font-bold text-2xl mb-3 text-center`}>
             Your {data?.title} is on the way
           </Text>
-          <Text style={tw`text-base text-center`}>
-            Ride cost: ${data?.price}
-          </Text>
-          <Text style={tw`text-base text-center`}>
-            Estimated time: {data?.time}
-          </Text>
-          <Text style={tw`text-base text-center`}>
-            Total Distance: {data?.distance}
-          </Text>
+          <View style={tw`items-center `}>
+            <Text>Please the Amount of : ${data?.price}</Text>
+           
+          </View>
         </View>
       </View>
     </SafeAreaView>

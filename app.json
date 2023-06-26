@@ -1,13 +1,13 @@
 {
   "expo": {
-    "name": "metro-cycle",
-    "slug": "metro-cycle",
+    "name": "Floating Scooter",
+    "slug": "floating-scooter",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/metro-logo.png",
+    "icon": "./assets/logo.jpg",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/metro-logo.png",
+      "image": "./assets/splashFloating.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -19,7 +19,7 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/logo.jpg",
         "backgroundColor": "#ffffff"
       }
     },
