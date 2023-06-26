@@ -51,8 +51,6 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 
 ## :star2: About the Project
 
-
-
 <!-- Screenshots -->
 
 ### :camera: Screenshots
@@ -61,13 +59,18 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 <img width='400rem'  src='https://user-images.githubusercontent.com/87669361/215503229-ab694dc9-6a30-4db4-9461-a205a8f45821.png' alt='image'/>
 </div>
 
-<a href="demo/flow.html">View the FlowChart for the APP</a>
+<div align="center" display="flex">
+<a href="https://screenshotflow.com/?open=1yK7QvQPO7APloNP9WdxIfEXfr9g-KjGU">View the FlowChart for the APP here</a>
+</div>
 
+<div align="center" display='flex'>
+
+<img width='400rem'  src='https://user-images.githubusercontent.com/87669361/215503229-ab694dc9-6a30-4db4-9461-a205a8f45821.png' alt='image'/>
+</div>
 
 <br />
 
 ## <a> 🚀</a>
-
 
 ### :space_invader: Tech Stack
 
