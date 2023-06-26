@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="../metro-cycle/assets/demologo.png" alt="logo" width="200" height="auto" />
+  <img src="https://github.com/nikhil-pn/FloatingScooter/blob/main/assets/demologo.png" alt="logo" width="200" height="auto" />
   
 # Floating Scooter Built with REACT NATIVE!
   
@@ -32,7 +32,6 @@
 ## :handshake: Visit My Website
 
 Visit my Website to know more <a href='https://nikhilpn.com'>www.nikhilpn.com</a>
-
 
 <!-- Table of Contents -->
 
@@ -182,4 +181,3 @@ To learn more about React native and redux, take a look at the following resourc
 ## :handshake: Contact
 
 Nikhil PN - [@twitter pluto0p](https://twitter.com/nikhilETH) - nikhilpn725@gmail.com
-
