@@ -71,7 +71,6 @@
 ## Watch Demo Video on Youtube 🎥<a target="_blank" href=' https://www.youtube.com/shorts/-6y7DtuBcJ4'>https://www.youtube.com/shorts/-6y7DtuBcJ4</a>
 
 <br />
-## <a> 🚀</a>
 
 ### :space_invader: Tech Stack
 
