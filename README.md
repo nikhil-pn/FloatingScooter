@@ -31,7 +31,7 @@
 
 ## :handshake: Visit My Website
 
-Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www.nikhilpn.com</a>
+# Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www.nikhilpn.com</a>
 
 <!-- Table of Contents -->
 
@@ -71,7 +71,6 @@ Visit my Website to know more <a target="_blank" href='https://nikhilpn.com'>www
 ## Watch Demo Video on Youtube 🎥<a target="_blank" href=' https://www.youtube.com/shorts/-6y7DtuBcJ4'>https://www.youtube.com/shorts/-6y7DtuBcJ4</a>
 
 <br />
-
 ## <a> 🚀</a>
 
 ### :space_invader: Tech Stack
